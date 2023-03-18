@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.svg" />
+    <title>TOGO - Bienvenue</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#accueil" class="lienlogo"><img class="logo" src="assets/images/logo.svg" alt="logo"></a>
+        <a href="javascript:void(0)" class="menu">
+            <div class="button_container" id="toggle"> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span></div>
+        </a>
+        <div class="overlay" id="overlay">
+            <div class="overlay-menu">
+                <ul>
+                    <li><a href="#header">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="tourism.html">SITES TOURISTIQUES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="header" id="header">
+        <h1>Bienvenue au Togo</h1>
+        <h3>Travail – Liberté – Patrie</h3>
+        <div class="scroll">
+            <a href="#accueil">
+                <p>SCROLL</p>
+                <div></div>
+            </a>
+        </div>
+    </section>
+    <section class="accueil" id="accueil">
+        <h4 class="titrepartie">Bienvenue sur notre site web de tourisme dédié au Togo, un petit pays situé en Afrique de l'Ouest.</h4>
+        <div class="infoaccueil">
+            <div class="partiegauche wow"><img class="photo" src="assets/images/map.jpg" alt="">
+                <div class="carre1"></div>
+                <div class="carre2"></div>
+            </div>
+            <div class="partiedroite wow">
+                <p>Le Togo est connu pour sa diversité culturelle, ses paysages magnifiques et ses communautés accueillantes. Nous sommes ravis de partager avec vous notre passion pour ce pays merveilleux et de vous aider à planifier votre voyage pour découvrir tout ce qu'il a à offrir.
+                </br></br>Que vous soyez à la recherche de plages de sable fin, de randonnées dans les montagnes, de festivals traditionnels ou de délicieuse cuisine locale, nous sommes là pour vous guider et vous aider à créer des souvenirs inoubliables.</p>
+            </div>
+        </div>
+        <div class="infoaccueil infoequipe">
+            <div class="equipe wow">
+                <p>Notre équipe locale est composée de guides expérimentés et passionnés qui connaissent parfaitement le pays et qui vous aideront à organiser votre voyage de manière sûre et agréable. Nous espérons que vous trouverez notre site informatif et inspirant, et que vous vous joindrez à nous pour découvrir tout ce que le Togo a à offrir.
+                </br></br>
+                    Contactez-nous au : 
+                </br></br><a href="tel:+33600000000">90 XX XX XX</a> / <a href="tel:+33600000000">90 XX XX XX</a>
+                </br></br>
+                <a href="mailto:cestletourismetogolais@ouimorray.com">cestletourismetogolais@ouimorray.com</a></p>
+            </div>
+            <div class="partiegauche wow">
+                <img class="photo" src="assets/images/beach.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© All Rights Reserved</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

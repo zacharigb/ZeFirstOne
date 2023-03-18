@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.svg" />
+    <title>TOGO - Sites touristiques</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="lienlogo"><img class="logo" src="assets/images/logo.svg" alt="logo"></a>
+        <a href="javascript:void(0)" class="menu">
+            <div class="button_container" id="toggle"> <span class="top"></span> <span class="middle"></span> <span class="bottom"></span></div>
+        </a>
+        <div class="overlay" id="overlay">
+            <div class="overlay-menu">
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="about.html">À PROPOS</a></li>
+                    <li><a href="#tourism">SITES TOURISTIQUES</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="about" id="tourism">
+        <h1 class="titrepartie">Sites touristiques</h1>
+        <div class="section-about wow">
+            <header>
+                <h2>Où dormir ?</h2>
+                <p>A Lomé, la capitale, vous trouverez divers hôtels, appart ‘hôtels disponibles sur les sites et applications tels que Kayak et Booking.
+                </br></br>
+                    Pour vous loger, comptez entre 30 à 100 euros la nuit en fonction de votre localisation et de la période de votre séjour au Togo. Il va de soi que plus vous vous éloignez des grandes villes touristiques comme Kara ou Lomé, plus le tarif des logements sera bas.
+                </br></br>
+                    Vous pouvez également vous rapprocher de notre agence « cestletourismetogolaismorray » pour avoir des propositions des logements convenant à toutes tailles de budgets. </p>
+            </header>
+        </div>
+        <div class="section-about wow">
+            <header>
+                <h2>Où sortir ?</h2>
+                <p>A Lomé :
+                </br></br>HARMONIE SIGNATURE, un complexe de loisirs. Ce centre accueille une piscine olympique, une aire de jeux pour enfants, des salles de gym et de bowling ainsi que des terrains de basket et de tennis. Un restaurant y sert des spécialités italiennes et près de la piscine, un snack-bar propose salades et sandwichs.</p>
+            </header>
+            <img src="./assets/images/lome_one.jpg" alt="lome">
+        </div>
+        <div class="section-about column-reverse wow">
+            <img src="./assets/images/lome_two.jpg" alt="lome_two">
+            <header>
+                <p>BLUE BEACH, MARCELO BEACH, PURE PLAGE sont différents complexes présents à Lomé construit en bordure de mer offrant des espaces restaurations, de détente, des aires de jeux.
+                </br></br>
+                    Lomé propose divers bars, lounge bar où vous pourrez vous récréer.</p>
+            </header>
+        </div>
+        <div class="section-about wow">
+            <header>
+                <h2>Où visiter ?</h2>
+                <p>Prenez le temps d’apprécier, en randonnant, les fabuleux paysages du plateau de Danyi, au centre du Togo.
+                </br></br>
+                    Explorer la région des Plateaux, sa nature foisonnante, ses forêts, ses montagnes, ses vallées, ses cultures, ses cascades.</p>
+            </header>
+            <img src="./assets/images/visite_one.jpeg" alt="lome">
+        </div>
+        <div class="section-about column-reverse wow">
+            <img src="./assets/images/visite_two.jpg" alt="lome_two">
+            <header>
+                <p>Découvrez le Pays tamberma, dans le Nord du Togo, et l’étonnante architecture de ses «tatas», ses maisons-forteresses.</p>
+            </header>
+        </div>
+        <div class="section-about wow">
+            <header>
+                <p>Vous trouverez également des monuments historiques tels que le monument de l’indépendance dans la capitale, la maison des esclaves à Agbodrafo, le château Vial à Kpalimé.</p>
+            </header>
+            <img src="./assets/images/visite_three.jpeg" alt="lome_three">
+        </div>
+        <div class="section-about column-reverse wow">
+            <img src="./assets/images/visite_four.jpg" alt="lome_four">
+            <header>
+                <p>La localité de Togoville situé au bord du Lac Togo, est une ville riche en traditions également un lieu sacré pour les chrétiens.</p>
+            </header>
+        </div>
+    </section>
+    <footer>
+        <p>© All Rights Reserved</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

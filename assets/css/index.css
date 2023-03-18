@@ -1,0 +1,463 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+a:hover {
+    color: #006A4A;
+}
+
+/*HEADER*/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    background-image: url('../images/header-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8em 6em;
+}
+
+.header h1 {
+    font-family: 'Patrick Hand SC', cursive;
+    line-height: 120px;
+    font-size: 10rem;
+    margin: 0;
+    text-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #006A4A;    
+    font-family: 'Open Sans', sans-serif;
+    padding: .2em .4em;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    border: solid 2px #006A4A;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    width: fit-content;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    align-self: flex-end;
+    right: calc(50% - 40px);
+}
+
+.scroll:hover div {
+    height: 50px;
+}
+
+.scroll p {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1.7rem;
+    margin: auto;
+    text-align: center;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: black !important;
+    width: 20px;
+}
+
+.scroll div {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 5px;
+    height: 35px;
+    margin: auto;
+    transition: .3s ease;
+}
+
+/*ACCUEIL*/
+
+.accueil {
+    min-height: 100vh;
+    padding: 6em 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.infoaccueil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 0;
+}
+
+.partiegauche {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.partiedroite {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+.equipe {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.equipe p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+.partiedroite p {
+    margin-left: 2em;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.photo {
+    height: 400px;
+    width: 560px;
+    border: solid 4px black;
+}
+
+.carre1,
+.carre2 {
+    width: 80px;
+    height: 80px;
+    border: 4px solid;
+    position: absolute;
+}
+
+.carre1 {
+    top: -40px;
+    left: -40px;
+    z-index: -1;
+}
+
+.carre2 {
+    bottom: -35px;
+    right: -40px;
+
+}
+
+.partiegauche:hover .carre2,
+.partiegauche:hover .carre1 {
+    animation: rotate 8s linear 0s infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:790px) {
+    .accueil, .about {
+        padding: 4em 2em !important;
+    }
+    
+    .infoequipe {
+        flex-direction: column-reverse;
+    }
+
+    .partiedroite {
+        width: 90%;
+    }
+
+    .equipe {
+        width: 90%;
+    }
+
+    .photo {
+        height: 180px;
+        width: 300px;
+        border: solid 4px black;
+    }
+
+    .carre1,
+    .carre2 {
+        width: 60px;
+        height: 60px;
+        border: 3px solid;
+    }
+
+    .carre1 {
+        left: -30px;
+        top: -30px;
+    }
+
+    .carre2 {
+        right: -28px;
+        top: 148px;
+    }
+}
+
+@media (max-width:450px) {
+
+    .partiedroite p, .equipe p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1320px) {
+    .header h1 {
+        font-size: 6rem;
+    }
+    
+    .header h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1260px) {
+    .infoaccueil {
+        flex-direction: column;
+        width: 100%;
+        gap: 4em;
+    }
+
+    .partiedroite, .equipe {
+        width: 100%;
+    }
+    .partiedroite p, .equipe p {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 1100px) {
+    .header {
+        justify-content: space-between;
+        background-position-x: center;
+        padding: 4em 2em;
+        flex-direction: column;
+        height: 60vh;
+    }
+    
+    .header h1 {
+        text-align: center;
+    }
+
+    .header h3 {
+        text-align: center;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    a {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 560px) {
+    .accueil {
+        gap: 4em;
+    }
+    .infoaccueil {
+        gap: 3em;
+    }
+    .header h1 {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .header h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    .header h3 {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 6.1s;
+    }
+
+    .header {
+        width: 100%;
+    }
+}
+
+/*ABOUT*/
+
+.about {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    padding: 8em 6em;
+}
+
+.titrepartie {
+    margin: 0;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: normal;
+}
+
+.section-about {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.section-about header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.section-about header h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-about header p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-about img {
+    width: 48%;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .titrepartie {
+        font-size: 2rem;
+    }
+    .section-about {
+        width: 100%;
+       flex-direction: column;
+    }
+
+    .section-about header {
+        padding: 0;
+    }
+
+    .section-about img {
+        width: 90%;
+    }
+
+    .column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    border-top: solid 2px #006A4A;
+    background; white;
+    color: #006A4A;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
